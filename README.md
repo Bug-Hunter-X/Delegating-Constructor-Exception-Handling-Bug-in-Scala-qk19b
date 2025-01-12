@@ -1,0 +1,3 @@
+# Delegating Constructor Exception Handling Bug in Scala
+
+This repository demonstrates a subtle bug related to exception handling in Scala's delegating constructors.  The `IllegalArgumentException` is only thrown when the default (delegating) constructor is used.  The main issue is the lack of robust handling in the delegating constructor to ensure that the `value` is properly initialized, causing the exception to be triggered unexpectedly.  The solution shows how to add a check in the delegating constructor to prevent this.
